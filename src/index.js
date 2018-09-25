@@ -1,15 +1,18 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom';
-import './index.css';
+import TodoList from './assets/components/TodoList';
+import './assets/css/index.css';
 
 var renderLocation = document.querySelector('#root');
 
-class TodoList extends Component {
+class App extends Component {
     render() {
         return (
-            <h1>Hello There</h1>
+            <div>
+                <TodoList/>
+            </div>
         )
     }
 }
 
-ReactDOM.render(<TodoList/>, renderLocation);
+ReactDOM.render(<App/>, renderLocation);
